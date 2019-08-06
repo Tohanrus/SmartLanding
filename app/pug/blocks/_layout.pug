@@ -1,0 +1,22 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(type="text/css", href="css/libs.min.css", rel="stylesheet")
+        link(href="css/jquery-ui.min.css", rel="stylesheet", type="text/css")
+        link(type="text/css", href="css/main.css", rel="stylesheet")
+        title Smart Landing
+    body
+        #contentWrapper.content-wrapper
+            #pageWrapper.page-wrapper
+                include _header
+                block content
+
+            #footerWrapper.footer-wrapper
+                include _footer
+
+        script(src="js/libs.min.js")
+        script(src="js/jquery.mask.min.js")
+        script(src="js/jquery-ui.min.js")
+        script(src="js/common.js")
